@@ -21,6 +21,18 @@ currencyRouter.get('/:pageNum', async (req, res) => {
   }
 });
 
+currencyRouter.get('/:perPage/:currency', async (req, res) => {
+  try {
+    const currencyData = await axios.get(
+      `https://api.nomics.com/v1/currencies/ticker?key=${key}&interval=1d,7d&convert=${req.params.currency}&status=active&per-page=${req.params.perPage}&page=${req.params.pageNum}&sort=rank`
+    );
+
+    res.json(currencyData.data);
+  } catch (error) {
+    res.status(500).json('Internal Server Error');
+  }
+});
+
 currencyRouter.get('/currency/:id', async (req, res) => {
   try {
     const currencyData = await axios.get(
