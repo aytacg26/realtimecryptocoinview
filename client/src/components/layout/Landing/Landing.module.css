@@ -13,7 +13,8 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.45)
   );
-  border: rgb(150, 180, 194);
+
+  border-bottom: 5px solid #002453;
   backdrop-filter: blur(0.5px);
   box-shadow: 1px 1px 3px black;
 }
@@ -26,6 +27,29 @@
 }
 
 .DataArea {
-  padding: 5px;
   display: flex;
+
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.DataList {
+  flex: 1;
+}
+
+.DataCardSection {
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+  width: 100%;
+  border-left: 1px solid rgb(175, 175, 175);
+  border-right: 1px solid rgb(175, 175, 175);
+  min-height: 50vh;
+  padding: 10px;
+  flex: 3;
+}
+
+.Ads {
+  flex: 1;
 }
