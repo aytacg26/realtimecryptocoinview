@@ -1,0 +1,31 @@
+.LandingMain {
+  max-width: 100%;
+  margin-top: 55px;
+  position: relative;
+}
+
+.GlassOver {
+  position: absolute;
+  width: 100vw;
+  height: calc(50vh - 55px);
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.45)
+  );
+  border: rgb(150, 180, 194);
+  backdrop-filter: blur(0.5px);
+  box-shadow: 1px 1px 3px black;
+}
+
+.LandingImage {
+  width: 100vw;
+  background: url('../../../Assets/images/wp3624636-cryptocurrency-wallpapers.png')
+    no-repeat;
+  height: calc(50vh - 55px);
+}
+
+.DataArea {
+  padding: 5px;
+  display: flex;
+}

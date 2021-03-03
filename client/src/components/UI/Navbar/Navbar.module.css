@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.NavbarMain {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  box-shadow: 1px 1px 3px rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  padding: 5px 20px;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #ffffff, #53a7eb75);
+}
+
+.LogoArea {
+  display: flex;
+  flex: 1;
+  max-height: 50px;
+  width: 50px;
+  align-items: center;
+}
+
+.LogoArea span {
+  font-family: 'Anton', sans-serif;
+  margin-left: 5px;
+  color: #1b5c7aab;
+  text-shadow: 1px 1px 3px #1a5875;
+}
+
+.LogoArea img {
+  max-width: 13%;
+}
+
+.SearchArea {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.MenuArea {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
